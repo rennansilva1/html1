@@ -3,203 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BemEstar Menopausa - Cuidados Especiais</title>
+    <title>Informações sobre Menopausa</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
         body {
-            background-color: #f9f2f4;
-        }
-
-        header {
-            background-color: #8e44ad;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #9b59b6;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            padding: 0.5rem;
-        }
-
-        nav a:hover {
-            background-color: #8e44ad;
-            border-radius: 4px;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 3rem 1rem;
-            background-color: #fff;
-        }
-
-        .produtos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            padding: 2rem;
-            max-width: 1200px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
             margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f7ff;
         }
-
-        .produto-card {
-            background: white;
-            border-radius: 8px;
-            padding: 1rem;
-            width: 300px;
+        header {
+            background-color: #7fb3d5;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            border-radius: 5px;
+        }
+        h1 {
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            color: #2980b9;
+        }
+        .info-box {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
         }
-
-        .produto-card:hover {
-            transform: translateY(-5px);
+        ul {
+            padding-left: 20px;
         }
-
-        .produto-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-
-        .beneficios {
-            background-color: #fff;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-
-        .beneficios-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 2rem auto;
-        }
-
-        .beneficio-item {
-            padding: 1rem;
-        }
-
-        footer {
-            background-color: #8e44ad;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 2rem;
-        }
-
-        .btn {
-            background-color: #8e44ad;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 1rem;
-        }
-
-        .btn:hover {
-            background-color: #9b59b6;
-        }
-
-        @media (max-width: 768px) {
-            .produtos {
-                padding: 1rem;
-            }
-            
-            .produto-card {
-                width: 100%;
-            }
+        .tip {
+            background-color: #d5f5e3;
+            border-left: 5px solid #2ecc71;
+            padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>BemEstar Menopausa</h1>
-        <p>Cuidado e conforto para uma nova fase da vida</p>
+        <h1>Menopausa: Entendendo esta Fase</h1>
     </header>
+    
+    <div class="info-box">
+        <h2>O que é a Menopausa?</h2>
+        <p>A menopausa é uma fase natural na vida de uma mulher, marcando o fim do ciclo menstrual. Geralmente ocorre entre os 45 e 55 anos de idade.</p>
+    </div>
 
-    <nav>
-        <a href="#produtos">Produtos</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#contato">Contato</a>
-    </nav>
+    <div class="info-box">
+        <h2>Sintomas Comuns</h2>
+        <ul>
+            <li>Ondas de calor</li>
+            <li>Suores noturnos</li>
+            <li>Alterações de humor</li>
+            <li>Secura vaginal</li>
+            <li>Insônia</li>
+            <li>Diminuição da libido</li>
+        </ul>
+    </div>
 
-    <section class="hero">
-        <img src="/api/placeholder/800/400" alt="Mulher sorrindo" style="max-width: 100%; height: auto;">
-        <h2>Qualidade de Vida na Menopausa</h2>
-        <p>Descubra nossa linha completa de produtos desenvolvidos especialmente para você</p>
-        <a href="#produtos" class="btn">Conheça Nossos Produtos</a>
-    </section>
+    <div class="info-box">
+        <h2>Cuidados Importantes</h2>
+        <p>Durante a menopausa, é essencial cuidar da saúde física e mental. Algumas recomendações incluem:</p>
+        <ul>
+            <li>Manter uma dieta equilibrada</li>
+            <li>Praticar exercícios regularmente</li>
+            <li>Gerenciar o estresse</li>
+            <li>Consultar um médico regularmente</li>
+        </ul>
+    </div>
 
-    <section id="produtos" class="produtos">
-        <div class="produto-card">
-            <img src="/api/placeholder/300/200" alt="Suplemento Natural">
-            <h3>Suplemento Natural</h3>
-            <p>Fórmula exclusiva com isoflavonas e vitaminas essenciais</p>
-            <a href="#" class="btn">Saiba Mais</a>
-        </div>
-
-        <div class="produto-card">
-            <img src="/api/placeholder/300/200" alt="Creme Hidratante">
-            <h3>Creme Hidratante</h3>
-            <p>Hidratação intensiva para pele durante a menopausa</p>
-            <a href="#" class="btn">Saiba Mais</a>
-        </div>
-
-        <div class="produto-card">
-            <img src="/api/placeholder/300/200" alt="Chá Especial">
-            <h3>Chá Especial</h3>
-            <p>Blend exclusivo para equilibrar os hormônios naturalmente</p>
-            <a href="#" class="btn">Saiba Mais</a>
-        </div>
-    </section>
-
-    <section id="beneficios" class="beneficios">
-        <h2>Benefícios dos Nossos Produtos</h2>
-        <div class="beneficios-grid">
-            <div class="beneficio-item">
-                <img src="/api/placeholder/100/100" alt="Ícone Natural" style="width: 80px; height: 80px;">
-                <h3>100% Natural</h3>
-                <p>Produtos desenvolvidos com ingredientes naturais e seguros</p>
-            </div>
-
-            <div class="beneficio-item">
-                <img src="/api/placeholder/100/100" alt="Ícone Qualidade" style="width: 80px; height: 80px;">
-                <h3>Qualidade Garantida</h3>
-                <p>Rigoroso controle de qualidade em toda produção</p>
-            </div>
-
-            <div class="beneficio-item">
-                <img src="/api/placeholder/100/100" alt="Ícone Resultados" style="width: 80px; height: 80px;">
-                <h3>Resultados Comprovados</h3>
-                <p>Eficácia comprovada por estudos clínicos</p>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contato">
-        <h2>Entre em Contato</h2>
-        <p>Tire suas dúvidas e descubra mais sobre nossos produtos</p>
-        <a href="mailto:contato@bemestarmenopausa.com" class="btn">Enviar Email</a>
-        <p style="margin-top: 1rem;">© 2024 BemEstar Menopausa. Todos os direitos reservados.</p>
-    </footer>
+    <div class="tip">
+        <h3>Dica de Bem-estar</h3>
+        <p>A prática de yoga e meditação pode ajudar a aliviar os sintomas da menopausa e melhorar a qualidade de vida.</p>
+    </div>
 </body>
 </html>
+
